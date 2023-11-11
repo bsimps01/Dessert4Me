@@ -11,6 +11,8 @@ import Combine
 class Dessert4MeViewModel: ObservableObject {
     @Published var meals: [Meal] = []
     @Published var isLoading = false
+    @Published var images: [String: UIImage] = [:]
+
     
     func fetchDesserts() {
         isLoading = true
@@ -25,7 +27,20 @@ class Dessert4MeViewModel: ObservableObject {
                 if let data = data {
                     if let decodedResponse = try? JSONDecoder().decode(MealResponse.self, from: data) {
                         self?.meals = decodedResponse.meals
+                        self?.meals.forEach { self?.loadImage(for: $0)}
                     }
+                }
+            }
+        }.resume()
+    }
+    
+    func loadImage(for meal: Meal) {
+        guard let url = URL(string: meal.strMealThumb) else { return }
+        
+        URLSession.shared.dataTask(with: url) { [weak self] data, _, _ in
+            DispatchQueue.main.async {
+                if let data = data, let image = UIImage(data: data) {
+                    self?.images[meal.idMeal] = image
                 }
             }
         }.resume()
