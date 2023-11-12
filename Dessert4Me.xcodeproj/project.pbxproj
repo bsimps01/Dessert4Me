@@ -13,6 +13,10 @@
 		1B9F33DF2AFEACA200632FE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9F33DE2AFEACA200632FE5 /* Preview Assets.xcassets */; };
 		1B9F33E62AFEAE2C00632FE5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F33E52AFEAE2B00632FE5 /* DataModel.swift */; };
 		1B9F33E82AFEAF4800632FE5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F33E72AFEAF4700632FE5 /* ViewModel.swift */; };
+		1B9F33EC2AFF12D700632FE5 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F33EB2AFF12D700632FE5 /* DessertDetailView.swift */; };
+		1B9F33EE2AFF169D00632FE5 /* DetailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F33ED2AFF169D00632FE5 /* DetailImage.swift */; };
+		1B9F33F02B0016E500632FE5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F33EF2B0016E500632FE5 /* LoadingView.swift */; };
+		1B9F33F22B003E2900632FE5 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F33F12B003E2900632FE5 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		1B9F33DE2AFEACA200632FE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B9F33E52AFEAE2B00632FE5 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		1B9F33E72AFEAF4700632FE5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1B9F33EB2AFF12D700632FE5 /* DessertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
+		1B9F33ED2AFF169D00632FE5 /* DetailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImage.swift; sourceTree = "<group>"; };
+		1B9F33EF2B0016E500632FE5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1B9F33F12B003E2900632FE5 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				1B9F33D72AFEAC9700632FE5 /* Dessert4MeApp.swift */,
-				1B9F33D92AFEAC9700632FE5 /* ContentView.swift */,
-				1B9F33E52AFEAE2B00632FE5 /* DataModel.swift */,
-				1B9F33E72AFEAF4700632FE5 /* ViewModel.swift */,
+				1B9F33F42B00B1CF00632FE5 /* View */,
+				1B9F33F32B00B15800632FE5 /* Model-View Model */,
 				1B9F33DB2AFEACA200632FE5 /* Assets.xcassets */,
 				1B9F33DD2AFEACA200632FE5 /* Preview Content */,
 			);
@@ -71,6 +78,27 @@
 				1B9F33DE2AFEACA200632FE5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1B9F33F32B00B15800632FE5 /* Model-View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B9F33E52AFEAE2B00632FE5 /* DataModel.swift */,
+				1B9F33E72AFEAF4700632FE5 /* ViewModel.swift */,
+			);
+			path = "Model-View Model";
+			sourceTree = "<group>";
+		};
+		1B9F33F42B00B1CF00632FE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B9F33ED2AFF169D00632FE5 /* DetailImage.swift */,
+				1B9F33EF2B0016E500632FE5 /* LoadingView.swift */,
+				1B9F33D92AFEAC9700632FE5 /* ContentView.swift */,
+				1B9F33EB2AFF12D700632FE5 /* DessertDetailView.swift */,
+				1B9F33F12B003E2900632FE5 /* WebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9F33DA2AFEAC9700632FE5 /* ContentView.swift in Sources */,
+				1B9F33F22B003E2900632FE5 /* WebView.swift in Sources */,
 				1B9F33D82AFEAC9700632FE5 /* Dessert4MeApp.swift in Sources */,
+				1B9F33EE2AFF169D00632FE5 /* DetailImage.swift in Sources */,
+				1B9F33EC2AFF12D700632FE5 /* DessertDetailView.swift in Sources */,
 				1B9F33E82AFEAF4800632FE5 /* ViewModel.swift in Sources */,
+				1B9F33F02B0016E500632FE5 /* LoadingView.swift in Sources */,
 				1B9F33E62AFEAE2C00632FE5 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
